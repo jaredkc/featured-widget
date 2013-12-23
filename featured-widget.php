@@ -2,7 +2,7 @@
 /**
  * Plugin Name: Featured Widget
  * Plugin URI: https://github.com/jaredkc/wp-featured-widget
- * Description: A basic wiget that display a title, description, button text and button Link. Intended to be styled as desired for you theme.
+ * Description: A basic widget that displays a title, description, button text and button Link. Intended to be styled as desired to match your theme.
  * Version: 0.1
  * Author: Jared Cornwall
  * Author URI: http://jaredcornwall.com
@@ -25,7 +25,7 @@ class JKC_Featured_Widget extends WP_Widget {
 		parent::__construct(
 			'featured-widget',
 			'Featured Widget',
-			array( 'description' => __( 'A bold callout with title, description and link.', 'gild-theme' ), )
+			array( 'description' => __( 'A bold callout with title, description and link.', 'jkc-featured-widget' ), )
 		);
 	}
 
