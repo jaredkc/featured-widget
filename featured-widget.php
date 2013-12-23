@@ -45,11 +45,11 @@ class JKC_Featured_Widget extends WP_Widget {
 
 		echo $args['before_widget'];
 		if ( ! empty( $title ) )
-			echo '<h3>' . $title . '</h3>';
+			echo $args['before_title'] . $title . $args['after_title'];
 		if ( ! empty( $description ) )
 			echo $description;
 		if ( (! empty( $button_text )) && (! empty( $button_link )) )
-			echo '<p><a href="' . $button_link . '"' . ' class="btn-small">' . $button_text . '</a></p>';
+			echo '<p><a href="' . $button_link . '"' . '>' . $button_text . '</a></p>';
 		echo $args['after_widget'];
 	}
 
